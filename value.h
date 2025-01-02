@@ -5,15 +5,16 @@
 
 typedef double Value;
 
+/* constant pool */
 typedef struct {
         int capacity;
         int count;
         Value *values;
 } ValueArray;
 
-void init_ValueArray(ValueArray* array);
-void write_ValueArray(ValueArray* array, Value value);
-void free_ValueArray(ValueArray* array);
-void print_Value(Value value);
+void init_varray(ValueArray *array);
+void write_varray(ValueArray *array, Value value);
+void free_varray(ValueArray *array);
+void print_value(Value value);
 
 #endif
